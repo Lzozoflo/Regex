@@ -1,0 +1,143 @@
+*This project has been created by Florent Cretin.*
+<!-- 𝔸 𝔹 ℂ 𝔻 𝔼 𝔽 𝔾 ℍ 𝔾 𝕁 𝕂 𝕃 𝕄 ℕ 𝕆 ℙ ℚ ℝ 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℤ -->
+<!-- 🗎 🖋 👀 🗣 … -->
+
+[Tag_video_jason]: https://www.youtube.com/watch?v=f3QwwnvSQ50
+[Tag_site_r]: https://regexr.com/
+[Tag_site_101]: https://regex101.com/
+# Regex
+
+
+<h2 id="summary">🗓 𝕊ummary</h2>
+
+- [𝔻escription](#description)
+- [𝕆bjectives](#objectives)
+- [🕑 𝕃earning ℙrogression](#learningprogression)
+- [🛠 ℝequirements](#requirements)
+- [𝕌sage](#objectives)
+- [𝕃earning Notes](#learning-notes)
+- [ℝesources](#resources)
+- [🖋 𝔸uthor](#author)
+
+
+<h2 id="description">𝔻escription</h2>
+
+>Dans le cours javascript il parlais de regex alors j'ai fait une petit pause de ce cours pour allez voir une [video][Tag_video_jason]
+>
+>J'ai aussi pour but d'apprend a faire un parseur regex un jour car la meilleur facon d'apprend c'est faire...
+
+
+- [🗓 𝕊ummary](#summary)
+<br>
+
+---
+
+<br>
+
+<h2 id="objectives">𝕆bjectives</h2>
+
+> - Comprendre une ligne de regex
+> - Savoir ecrire une ligne de regex
+
+- [🗓 𝕊ummary](#summary)
+<br>
+
+---
+
+<br>
+
+<h2 id="learningprogression">🕑 𝕃earning ℙrogression</h2>
+
+>**Debut de phrase**:
+>>- '`^`'
+>>>Qui commence part "word": '`^word`'
+---
+>**Fin de phrase**:
+>>- '`$`'
+>>>Qui fini part "word": '`word$`'
+---
+>**Exp debut + fin**
+>>Commence part `'word1'` avec un space entre les 2 '` `' plus fini part `'1word'`:
+>>>- `'^word1'` + `' '` + `'1word$'`
+>>>- `'^word1 1word$'` recherche `'word1 1word'`
+---
+>**Les Alternation / Parenthèses**
+>>- '`(…|…)`'
+>>>Qui a '`oui`' ou '`non`' au debut:
+>>>`'^(oui|non)'`
+---
+>**Exp debut + fin + alternation**
+>>Commence part `'word1 '` avec un mots qui peut etre '`oui`' ou '`non`' entre les 2 plus fini part `' 1word'`:
+>>>- `'^word1 '` + `'(oui|non)'` + `' 1word$'`
+>>>- `'^word1 (oui|non) 1word$'` recherche `'word1 oui 1word'` ou `'word1 non 1word'`
+---
+>**Quantificateur**
+>>- `?` (0 ou 1 fois)
+>>- `*` (0 plusiseur fois)
+>>- `+` (1 plusiseur fois)
+>>>- ab+    // le + s’applique uniquement à b
+>>>- (ab)+  // le + s’applique au groupe "ab"
+>
+>>>- `'1?'`: `''` / `'1'`
+>>>- `'(12)*'`: `''`, `'12'`, `'1212'`, `'121212'`, `'12121212'`, …
+>>>- `'12+'`: `'12'`, `'122'`, `'1222'`, `'1222'`, …
+>>- `{N}` (N fois)
+>>- `{N,}` (au minimum N fois)
+>>- `{N, I}` (entre N et I fois)
+>>>- `'n{2}'`: `'nn'` 
+>>>- `'n{2,}'`: `'nn'` `'nnnn'` `'nnnnn'` …
+>>>- `'n{2,4}'`: `'nn'` `'nnn'` `'nnnn'`
+>>- . tout charactère sauf le \n
+---
+>**Class**
+>>- `'[abcd]'`: `'a'`, `'b'`, `'c'`, `'d'`
+>>- `'[a-d]'`: `'a'`, `'b'`, `'c'`, `'d'`
+
+- [🗓 𝕊ummary](#summary)
+<br>
+
+---
+
+<br>
+
+<h2 id="requirements">🛠 ℝequirements</h2>
+
+>Navitageur pour utiliser quelque site
+>>- [regexr][Tag_site_r]
+>>- [regex101][Tag_site_101]
+>
+>Un terminal pour faire des rechercher regex avec grep
+>Un language avec une lib(ou non) regex exp python(`import re`) c(`#include <regex.h>`) js(pas d'import requis)
+>il faut faire attention a certain langague ne sont pas forcement compatibil avec la norme regex
+
+- [🗓 𝕊ummary](#summary)
+<br>
+
+---
+
+<br>
+
+<h2 id="resources">ℝesources</h2>
+
+>- [Une video de jason champagne/fromation video/evolunoob][Tag_video_jason]
+>-
+
+- [🗓 𝕊ummary](#summary)
+<br>
+
+---
+
+<br>
+
+<h2 id="author">🖋 𝔸uthor</h2>
+
+All implementation decisions and documentation were written and validated by the project author.
+
+
+<br>
+
+---
+
+<br>
+
+- [🗓 𝕊ummary](#summary)
