@@ -4,8 +4,9 @@
 
 [Tag_video_jason]: https://www.youtube.com/watch?v=f3QwwnvSQ50
 [Tag_github_jason]: https://github.com/jasonchampagne/FormationVideo/blob/master/Ressources/Aide/expressions-rationnelles.md
-[Tag_site_r]: https://regexr.com/
-[Tag_site_101]: https://regex101.com/
+
+[Tag-requirements-regexr]: https://regexr.com/
+[Tag-requirements-regex101]: https://regex101.com/
 
 # Regex
 
@@ -77,8 +78,8 @@
 >>- `?` (0 ou 1 fois)
 >>- `*` (0 plusiseur fois)
 >>- `+` (1 plusiseur fois)
->>>- ab+    // le + s’applique uniquement à b
->>>- (ab)+  // le + s’applique au groupe "ab"
+>>>- ab+ le + s’applique uniquement à b
+>>>- (ab)+ le + s’applique au groupe "ab"
 >>>- `'1?'`: `''` / `'1'`
 >>>- `'(12)*'`: `''`, `'12'`, `'1212'`, `'121212'`, `'12121212'`, …
 >>>- `'12+'`: `'12'`, `'122'`, `'1222'`, `'1222'`, …
@@ -114,8 +115,8 @@
 <h2 id="requirements">🛠 ℝequirements</h2>
 
 >Navitageur pour utiliser quelque site
->>- [regexr][Tag_site_r]
->>- [regex101][Tag_site_101]
+>>- [regexr][Tag-requirements-regexr]
+>>- [regex101][Tag-requirements-regex101]
 >
 >Un terminal pour faire des rechercher regex avec grep
 >Un language avec une lib(ou non) regex exp python(`import re`) c(`#include <regex.h>`) js(pas d'import requis)
