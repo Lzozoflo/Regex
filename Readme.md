@@ -51,27 +51,27 @@
 <h2 id="learningprogression">🕑 𝕃earning ℙrogression</h2>
 
 >**Debut de phrase**
->>- '`^`'
->>>Qui commence part "word": '`^word`'
+>>- `'^'`
+>>>Qui commence part "word": `'^word'`
 ---
 >**Fin de phrase**
->>- '`$`'
->>>Qui fini part "word": '`word$`'
+>>- `'$'`
+>>>Qui fini part "word": `'word$'`
 ---
 >**Exp debut + fin**
->>Commence part `'word1'` avec un space entre les 2 '` `' plus fini part `'1word'`:
+>>Commence part `'word1'` avec un space entre les 2 `' '` plus fini part `'1word'`:
 >>>- `'^word1'` + `' '` + `'1word$'`
 >>>- `'^word1 1word$'` recherche `'word1 1word'`
 ---
 >**Les Alternation / Parenthèses**
->>- '`(…|…)`'
->>>Qui a '`oui`' ou '`non`' au debut:
+>>- `'(…|…)'`
+>>>Qui a `'oui'` ou `'non'` au debut:
 >>>`'^(oui|non)'`
 ---
 >**Exp debut + fin + alternation**
->>Commence part `'word1 '` avec un mots qui peut etre '`oui`' ou '`non`' entre les 2 plus fini part `' 1word'`:
+>>Commence part `'word1 '` avec un mots qui est soit `'oui'`/`'non'` puis fini part `' 1word'`:
 >>>- `'^word1 '` + `'(oui|non)'` + `' 1word$'`
->>>- `'^word1 (oui|non) 1word$'` recherche `'word1 oui 1word'` ou `'word1 non 1word'`
+>>>- `'^word1 (oui|non) 1word$'` recherche `'word1 oui 1word'`/`'word1 non 1word'`
 ---
 >**Quantificateur**
 >>- `?` (0 ou 1 fois)
