@@ -3,8 +3,10 @@
 <!-- 🗎 🖋 👀 🗣 … -->
 
 [Tag_video_jason]: https://www.youtube.com/watch?v=f3QwwnvSQ50
+[Tag_github_jason]: https://github.com/jasonchampagne/FormationVideo/blob/master/Ressources/Aide/expressions-rationnelles.md
 [Tag_site_r]: https://regexr.com/
 [Tag_site_101]: https://regex101.com/
+
 # Regex
 
 
@@ -24,7 +26,7 @@
 
 >Dans le cours javascript il parlais de regex alors j'ai fait une petit pause de ce cours pour allez voir une [video][Tag_video_jason]
 >
->J'ai aussi pour but d'apprend a faire un parseur regex un jour car la meilleur facon d'apprend c'est faire...
+>J'ai aussi pour but de faire un parseur regex un jour car la meilleur facon d'apprendre est de faire...
 
 
 - [🗓 𝕊ummary](#summary)
@@ -48,11 +50,11 @@
 
 <h2 id="learningprogression">🕑 𝕃earning ℙrogression</h2>
 
->**Debut de phrase**:
+>**Debut de phrase**
 >>- '`^`'
 >>>Qui commence part "word": '`^word`'
 ---
->**Fin de phrase**:
+>**Fin de phrase**
 >>- '`$`'
 >>>Qui fini part "word": '`word$`'
 ---
@@ -77,10 +79,10 @@
 >>- `+` (1 plusiseur fois)
 >>>- ab+    // le + s’applique uniquement à b
 >>>- (ab)+  // le + s’applique au groupe "ab"
->
 >>>- `'1?'`: `''` / `'1'`
 >>>- `'(12)*'`: `''`, `'12'`, `'1212'`, `'121212'`, `'12121212'`, …
 >>>- `'12+'`: `'12'`, `'122'`, `'1222'`, `'1222'`, …
+>
 >>- `{N}` (N fois)
 >>- `{N,}` (au minimum N fois)
 >>- `{N, I}` (entre N et I fois)
@@ -92,6 +94,15 @@
 >**Class**
 >>- `'[abcd]'`: `'a'`, `'b'`, `'c'`, `'d'`
 >>- `'[a-d]'`: `'a'`, `'b'`, `'c'`, `'d'`
+>>- `'^[a-z]+$'` accepte seulement un chaine de charactère minuscule
+>
+>Ce métacharactère `'^'` est utiliser pour inverse la class exemple:
+>>- `'^[^a-z]+$'` accepte une string de tout sauf les charactère de 'a' à 'z' 
+>>- `'[^a-zA-Z]'` accepte seulement un charactère non alpha
+
+
+
+
 
 - [🗓 𝕊ummary](#summary)
 <br>
@@ -120,7 +131,7 @@
 <h2 id="resources">ℝesources</h2>
 
 >- [Une video de jason champagne/fromation video/evolunoob][Tag_video_jason]
->-
+>- [Le markdown de la meme personne][Tag_github_jason]
 
 - [🗓 𝕊ummary](#summary)
 <br>
