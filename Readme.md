@@ -12,8 +12,8 @@
 
 
 
-<details>
-<summary style="font-size: 2em;"><strong id="summary" >🗓 𝕊ummary</strong></summary>
+<details style="font-size: 2em;">
+<summary ><strong id="summary" >🗓 𝕊ummary</strong></summary>
 
 - [𝔻escription](#description)
 - [𝕆bjectives](#objectives)
