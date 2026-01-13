@@ -20,6 +20,7 @@
 <span style="color: red;">Texte rouge</span>
 <span style="color: #4CAF50;">Texte vert</span>
 <span style="color: rgb(255, 165, 0);">Texte orange</span>
+![Status](https://img.shields.io/badge/STATUS-IN%20PROGRESS-yellow)
 
 <details>
 <summary>
