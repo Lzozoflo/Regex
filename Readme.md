@@ -12,7 +12,7 @@
 
 
 
-<details style="font-size: 2em;">
+<details style="font-size: 40px;">
 <summary ><strong id="summary" >🗓 𝕊ummary</strong></summary>
 
 - [𝔻escription](#description)
