@@ -12,7 +12,7 @@
 [Tag_video_jason]: https://www.youtube.com/watch?v=f3QwwnvSQ50
 [Tag_github_jason]: https://github.com/jasonchampagne/FormationVideo/blob/master/Ressources/Aide/expressions-rationnelles.md
 
-[Tag-requirements-regexr]: https://regexr.com/
+[Tag-requirements-regexr]: https://regexr.com/ "trust the link my friend"
 [Tag-requirements-regex101]: https://regex101.com/
 
 # Regex
