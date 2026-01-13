@@ -69,10 +69,16 @@
 >>>Qui a `'oui'` ou `'non'` au debut:
 >>>`'^(oui|non)'`
 ---
->**Exp debut + fin + alternation**
+
+<details>
+<summary>**Exp debut + fin + alternation**</summary>
+
 >>Commence part `'word1 '` avec un mots qui est soit `'oui'`/`'non'` puis fini part `' 1word'`:
 >>>- `'^word1 '` + `'(oui|non)'` + `' 1word$'`
 >>>- `'^word1 (oui|non) 1word$'` recherche `'word1 oui 1word'`/`'word1 non 1word'`
+
+</details>
+
 ---
 >**Quantificateur**
 >>- `?` (0 ou 1 fois)
