@@ -12,10 +12,14 @@
 [Tag_video_jason]: https://www.youtube.com/watch?v=f3QwwnvSQ50
 [Tag_github_jason]: https://github.com/jasonchampagne/FormationVideo/blob/master/Ressources/Aide/expressions-rationnelles.md
 
-[Tag-requirements-regexr]: https://regexr.com/ "trust the link my friend"
+[Tag-requirements-regexr]: https://regexr.com/
 [Tag-requirements-regex101]: https://regex101.com/
 
 # Regex
+
+<span style="color: red;">Texte rouge</span>
+<span style="color: #4CAF50;">Texte vert</span>
+<span style="color: rgb(255, 165, 0);">Texte orange</span>
 
 <details>
 <summary>
