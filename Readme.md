@@ -11,7 +11,9 @@
 # Regex
 
 
-<h2 id="summary">🗓 𝕊ummary</h2>
+
+<details>
+<summary><strong><h2 id="summary">🗓 𝕊ummary</h2></strong></summary>
 
 - [𝔻escription](#description)
 - [𝕆bjectives](#objectives)
@@ -22,6 +24,7 @@
 - [ℝesources](#resources)
 - [🖋 𝔸uthor](#author)
 
+</details>
 
 <h2 id="description">𝔻escription</h2>
 
@@ -51,27 +54,48 @@
 
 <h2 id="learningprogression">🕑 𝕃earning ℙrogression</h2>
 
->**Debut de phrase**
+
+<details>
+<summary><strong>Debut de phrase</strong></summary>
+
 >>- `'^'`
 >>>Qui commence part "word": `'^word'`
----
->**Fin de phrase**
->>- `'$'`
->>>Qui fini part "word": `'word$'`
----
->**Exp debut + fin**
->>Commence part `'word1'` avec un space entre les 2 `' '` plus fini part `'1word'`:
->>>- `'^word1'` + `' '` + `'1word$'`
->>>- `'^word1 1word$'` recherche `'word1 1word'`
----
->**Les Alternation / Parenthèses**
->>- `'(…|…)'`
->>>Qui a `'oui'` ou `'non'` au debut:
->>>`'^(oui|non)'`
+
+</details>
+
 ---
 
 <details>
-<summary>**Exp debut + fin + alternation**</summary>
+<summary><strong>Fin de phrase</strong></summary>
+>>- `'$'`
+>>>Qui fini part "word": `'word$'`
+
+</details>
+
+---
+
+<details>
+<summary><strong>Exp debut + fin</strong></summary>
+>>Commence part `'word1'` avec un space entre les 2 `' '` plus fini part `'1word'`:
+>>>- `'^word1'` + `' '` + `'1word$'`
+>>>- `'^word1 1word$'` recherche `'word1 1word'`
+
+</details>
+
+---
+
+<details>
+<summary><strong>Les Alternation / Parenthèses</strong></summary>
+>>- `'(…|…)'`
+>>>Qui a `'oui'` ou `'non'` au debut:
+>>>`'^(oui|non)'`
+
+</details>
+
+---
+
+<details>
+<summary><strong>Exp debut + fin + alternation</strong></summary>
 
 >>Commence part `'word1 '` avec un mots qui est soit `'oui'`/`'non'` puis fini part `' 1word'`:
 >>>- `'^word1 '` + `'(oui|non)'` + `' 1word$'`
@@ -80,7 +104,10 @@
 </details>
 
 ---
->**Quantificateur**
+
+<details>
+<summary><strong>Quantificateur</strong></summary>
+
 >>- `?` (0 ou 1 fois)
 >>- `*` (0 plusiseur fois)
 >>- `+` (1 plusiseur fois)
@@ -97,8 +124,14 @@
 >>>- `'n{2,}'`: `'nn'` `'nnnn'` `'nnnnn'` …
 >>>- `'n{2,4}'`: `'nn'` `'nnn'` `'nnnn'`
 >>- . tout charactère sauf le \n
+
+</details>
+
 ---
->**Class**
+
+<details>
+<summary><strong>Class</strong></summary>
+
 >>- `'[abcd]'`: `'a'`, `'b'`, `'c'`, `'d'`
 >>- `'[a-d]'`: `'a'`, `'b'`, `'c'`, `'d'`
 >>- `'^[a-z]+$'` accepte seulement un chaine de charactère minuscule
@@ -107,9 +140,9 @@
 >>- `'^[^a-z]+$'` accepte une string de tout sauf les charactère de 'a' à 'z' 
 >>- `'[^a-zA-Z]'` accepte seulement un charactère non alpha
 
+</details>
 
-
-
+---
 
 - [🗓 𝕊ummary](#summary)
 <br>
